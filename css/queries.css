@@ -1,0 +1,634 @@
+/* veliki tablet - 1200px (sirina manja od 1140px) */
+@media only screen and (max-width: 1200px) {
+
+.naslov{
+    width: 100%;
+    top: 25%;
+    left: 25%; }
+
+h1{
+    font-size: 400%;   
+}
+.dugme1{
+    padding: 15px 20px;
+    margin-top: 8%;
+    margin-left: 18%;
+    font-size: 125%; 
+}
+.dugmadi{
+   margin-left: 16%;
+   margin-top: 5%;
+}
+    .reserve{
+    height: 83vh;
+}
+ .onama{
+    margin-top: 9%;
+    padding: 0 30px;
+}
+
+.onama h4{
+    font-size: 23px;
+    
+}
+.onama p{
+    font-size: 18px; 
+}
+ 
+.cont_back_info {  
+  width: 600px;
+  height: 350px;
+
+}
+
+.cont_forms {
+ top:145px;
+left: 0px;
+  width: 300px;
+  height: 350px;
+}
+.cont_ba_opcitiy {
+width: 60%;
+height: 200px; 
+margin-top: 115px;
+padding:60px 0px;
+}
+.col_md_login {
+   left: 33px;  
+}
+
+.col_md_sign_up {
+    left: 8px
+}
+
+ .cont_forms_active_login {
+  height: 430px;  
+top:105px;
+left: 0px;
+}
+.cont_forms_active_sign_up {
+  height: 430px;  
+top:105px;
+left:300px;
+}   
+  
+.cont_form_sign_up > input {
+
+padding: 5px 10px;
+margin-left: 24px;
+margin-top: 25px;
+width: 250px;
+font-size: 17px;
+}
+
+.cont_form_sign_up > h2 {
+margin-top: 50px; 
+margin-left: 105px;
+font-size: 23px;
+}    
+    
+.cont_form_login > input {
+padding: 5px 10px;
+margin-left: 25px;
+margin-top: 35px;
+width: 250px;
+font-size: 17px;
+}
+
+.cont_form_login > h2 {
+margin-top: 90px; 
+margin-left: 105px;
+font-size: 23px;
+ 
+}    
+.btn_login,
+.btn_sign_up{ 
+padding: 3px;
+width: 120px;
+margin-top: 25px;
+}  
+    
+.overlay-content a {
+  font-size: 1.4rem;
+}
+    
+    
+  
+/* mali tablet - veliki tablet: od 768px do 1023px; */
+@media only screen and (max-width: 1023px){
+ .naslov{
+    top: 31%;
+    left: 16%; }
+
+h1{
+    
+    font-size: 400%;
+    color: #343434;
+    
+}
+.dugme1{
+    padding: 12px 19px;
+    margin-top: 7%;
+    margin-left: 26%;
+    font-size: 125%; 
+    color: #343434;
+}
+button {
+  height: 40px;
+  width: 55px;
+  margin: 3px 4px;
+  padding: 3px 2px;   
+}
+.dugmadi{
+   margin-left: 24%;
+   margin-top: 5%;
+}
+
+ .sekcija1{
+    padding-top: 12%;
+    padding-left: 2%;
+     padding-right: 2%;
+    height: 66vh;
+}
+
+h3{
+    font-size: 30px;
+}
+
+.card-container{
+width: 200px;
+    height: 300px;
+    margin: 30px auto; 
+}
+
+.back p,
+.back1 p,
+.back2 p{
+    padding: 0 8px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.back span {
+    font-size: 16px;
+}
+.back1 span{
+    font-size: 16px;
+     
+}
+.back2 span{
+    font-size: 14px;  
+}
+h3 i {
+    font-size: 40px;
+    padding-top: 20px;       
+}   
+.reserve {
+        height: 80vh;
+    }
+.dugme-send{
+    width: 20%;   
+}
+    /* -----Sekcija 4-----*/
+    
+.cotn_principal {
+    
+  width: 100%;
+    height: 70vh; }
+    
+ .onama{
+    margin-top: 8%;
+    padding: 0 12px;
+}
+
+.onama h4{
+    font-size: 20px;
+    
+}
+.onama p{
+    font-size: 15px; 
+}
+ 
+.cont_back_info {  
+  width: 410px;
+  height: 330px;
+    margin-left: 15%;
+    margin-top: 13%;
+}
+
+.cont_forms {
+ top:85px;
+left: 15%;
+  width: 205px;
+  height: 330px;
+}
+.cont_ba_opcitiy {
+width: 55%;
+height: 200px; 
+margin-top: 60px;
+padding:60px 0px;   
+}
+.cont_ba_opcitiy p{
+    font-size: 17px;    
+    }
+.col_md_login {
+   left: 80px;  
+}
+
+.col_md_sign_up {
+    left: -35px;
+}
+
+ .cont_forms_active_login {
+  height: 400px;  
+top:48px;
+left: 15%;
+}
+.cont_forms_active_sign_up {
+  height: 400px;  
+top:48px;
+left:300px;
+}   
+  
+.cont_form_sign_up > input {
+
+padding: 5px 10px;
+margin-left: 24px;
+margin-top: 25px;
+width: 155px;
+font-size: 15px;
+}
+
+.cont_form_sign_up > h2 {
+margin-top: 40px; 
+margin-left: 70px;
+font-size: 20px;
+}    
+    
+.cont_form_login > input {
+padding: 5px 10px;
+margin-left: 24px;
+margin-top: 25px;
+width: 155px;
+font-size: 15px;
+}
+
+.cont_form_login > h2 {
+margin-top: 90px; 
+margin-left: 70px;
+font-size: 20px;
+ 
+}    
+.btn_login,
+.btn_sign_up{ 
+padding: 1px;
+width: 100px;
+margin-top: 25px;
+font-size: 18px;
+}  
+       
+.cont_form_login > button,
+.cont_form_sign_up > button {
+    margin-left: 48px;
+}
+  /*---- FOOTER-----*/
+    footer{
+    padding: 20px;
+    font-size: 70%;
+}
+
+
+.social-nav{
+    list-style: none;
+    float: right;
+    margin-left: 150px;
+}
+.footer-nav li,
+.social-nav li {
+    display: inline-block;
+    margin-right: 22px;  
+}
+
+
+.social-nav li a:link,
+.social-nav li a:visited{
+    font-size: 140%;
+}
+
+footer p{
+
+    font-size: 95%;
+    margin-top: 20px;
+}
+
+ #return-to-top {
+  width: 40px;
+  height: 40px;
+} 
+ #return-to-top i {
+  left: 9px;
+  top: 4px; 
+}   
+
+
+.overlay-content a {
+  font-size: 1.2rem;
+}
+.open,
+.close {
+    font-size: 1.6rem;
+    
+}
+ 
+    
+    
+/* mali telefoni : od 0 do 480px*/
+@media only screen and (max-width: 480px){
+    header{
+        height: 95vh;
+    }
+    .naslov{
+    top: 34%;
+    left: 7%; }
+
+h1{
+    font-size: 300%; 
+    color: #121212;
+}
+.dugme1{
+    padding: 12px 19px;
+    margin-top: 12%;
+    margin-left: 26%;
+    font-size: 115%; 
+    color: #343434;
+}
+button {
+  height: 35px;
+  width: 45px;
+  margin: 3px 3px;
+  padding: 3px 1px;   
+}
+.dugmadi{
+   margin-left: 26%;
+   margin-top: 7%;
+}
+
+ .sekcija1{
+    
+    padding-top: 10%;
+    padding-left: 2%;
+     padding-right: 2%;
+    height: 90vh;
+}
+
+h3{
+    font-size: 22px;
+}
+
+.card-container{
+width: 200px;
+    height: 180px;
+    margin: 20px auto; 
+}
+
+.back p,
+.back1 p,
+.back2 p{
+    
+
+    font-size: 10px;
+}
+.back span {
+    font-size: 16px;
+}
+.back1 span{
+    font-size: 16px;
+     
+}
+.back2 span{
+    font-size: 14px;  
+}
+h3 i {
+    font-size: 40px;
+    padding-top: 20px;       
+}   
+.reserve {
+        height: 80vh;
+    }
+.dugme-send{
+    width: 20%;   
+}
+    
+    
+ .reserve{
+    
+    height: 88vh;
+    padding: 10px 0;
+    font-size: 20px;
+   
+}
+.reserve h3{
+font-size: 25px;
+    margin-top: 10px;
+}
+
+
+.input{
+    width: 80%;
+    padding: 10px; 
+}
+select{
+    height: 47px;   
+}
+textarea{
+    height: 12vh;
+    margin-top: 20px;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.2);
+}
+.rezervacija{
+    margin-top: 45px;
+   
+}
+
+.dugme-send{
+    width: 30%;
+   
+}
+
+.reserve p{
+    font-size: 16px;
+    padding-top: 10px;
+}   
+    
+    /* -----Sekcija 4-----*/
+    
+.cotn_principal {
+    
+  width: 100%;
+    height: 90vh; }
+    
+ .onama{
+   margin-top: 0;
+    padding: 30px 15px;
+     float: none;
+     width: 90%;
+     text-align: center;
+}
+
+.onama h4{
+    font-size: 20px;
+    
+}
+.onama p{
+    font-size: 15px;
+
+}
+ 
+.cont_back_info {  
+  width: 360px;
+  height: 250px;
+    margin-left: 31%;
+   margin-top: 30px;
+    float: none;
+}
+.cont_centrar {
+
+ margin-top: 0;
+}
+.cont_forms {
+ top:0;
+left: 31%;
+width: 180px;
+height: 250px;
+}
+.cont_ba_opcitiy {
+width: 45%;
+height: 180px; 
+margin-top: 0px;
+padding:40px 0px;   
+}
+.cont_ba_opcitiy p{
+    font-size: 17px;    
+    }
+.col_md_login {
+   left: 190px; 
+    bottom: 60px;
+}
+
+.col_md_sign_up {
+    bottom: 60px;
+    left: 50px;
+}
+
+ .cont_forms_active_login {
+height: 300px;  
+left: 1;
+top: -23px;
+}
+.cont_forms_active_sign_up {
+height: 300px;  
+top:-23px;
+left:384px;
+}   
+  
+.cont_form_sign_up > input {
+
+padding: 5px 10px;
+margin-left: 24px;
+margin-top: 15px;
+width: 145px;
+font-size: 14px;
+}
+
+.cont_form_sign_up > h2 {
+margin-top: 20px; 
+margin-left: 70px;
+font-size: 20px;
+}    
+    
+.cont_form_login > input {
+padding: 5px 10px;
+margin-left: 24px;
+margin-top: 30px;
+width: 145px;
+font-size: 14px;
+}
+
+.cont_form_login > h2 {
+margin-top: 40px; 
+margin-left: 70px;
+font-size: 20px;
+ 
+}    
+.btn_login,
+.btn_sign_up{ 
+padding: 1px;
+width: 100px;
+margin-top: 25px;
+font-size: 16px;
+}  
+    .btn_login{
+        margin-top:45px;
+    }      
+.cont_form_login > button,
+.cont_form_sign_up > button {
+    margin-left: 44px;
+}
+  /*---- FOOTER-----*/
+    footer{
+    padding: 20px;
+    font-size: 60%;
+}
+
+    .footer-nav{
+        margin-left: 30%;
+        
+    }    
+.social-nav{
+    float: right;
+    margin-left:170px;
+    margin-top: 10px;
+    
+}
+.footer-nav li,
+.social-nav li {
+    display: inline-block;
+    margin-right: 13px;  
+}
+
+
+.social-nav li a:link,
+.social-nav li a:visited{
+    font-size: 140%;
+}
+
+footer p{
+
+    font-size: 95%;
+    margin-top: 10px;
+}
+
+ #return-to-top {
+  width: 30px;
+  height: 30px;
+} 
+ #return-to-top i {
+  left: 5px;
+  top: 1px; 
+     font-size: 20px;
+}   
+#return-to-top:hover i {
+  
+  top: 2px;
+}
+
+.overlay-content a {
+  font-size: 1.1rem;
+}
+.open,
+.close {
+    font-size: 1.6rem;
+    
+}  
+}
+
