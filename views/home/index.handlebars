@@ -1,0 +1,484 @@
+<body>
+
+        <header>
+
+    
+            <div class = "tekst1"> 
+                <h1>POŠTOVANI GRAĐANI</h1>
+            </div>
+   <div class = "tekst">
+       <a> Zavod za javno zdravstvo Bosansko Podrinjskog Kantona je zdravstvena ustanova kojoj je glavni sadržaj rada javnozdravstvena djelatnost što znači da kroz prevenciju i promociju zdravlja brine o zdravlju stanovništva, a ne pojedinca.</a>
+   </div>
+
+   <div class="btn-div">
+     
+    <a class="btn2 " href="#">Gdje se nalazimo </a>
+    <a class="btn " href="#">Kako nas kontaktirati </a>
+   
+  </div>
+        <nav class="sticky">
+          
+            <div class="row">
+            <ul class="glavna-nav">
+              <li class="w3-xxlarge">
+                <a href="/">
+                <i class="material-icons w3-xxlarge">home</i>
+                </a></li>
+                <li> <a href="/about">O nama</a> </li>
+                 <li><a class="btn3" href="#">Novosti</a></li>
+                <div class="w3-dropdown-hover">
+                <li> <a href="/">Usluge</a></li>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="/sanitarni" class="w3-bar-item w3-button">Sanitarni pregled</a>
+        <a href="/DDD" class="w3-bar-item w3-button">DDD</a>
+        <a href="/ispravnost" class="w3-bar-item w3-button">Kontrola zdravstvene ispravnosti vode</a>
+      </div>
+      </div>
+                   <div class="w3-dropdown-hover">
+                <li> <a href="/">Aktivnosti</a></li>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="/" class="w3-bar-item w3-button">Obavljanje pripravničkog staža</a>
+        <a href="/" class="w3-bar-item w3-button">Obuka iz higjenskog minimuma</a>
+        <a href="/" class="w3-bar-item w3-button">Pregledi za izdavanje sanitarnih knjižica</a>
+        <a href="/" class="w3-bar-item w3-button">Mikrobiološke pretrage humanog materijala</a>
+        <a href="/" class="w3-bar-item w3-button">Ispitivanje hrane, vode i predmeta opšte upotrebe</a>
+        <a href="/" class="w3-bar-item w3-button">Fakultativna imunizacijai antirabična zaštita</a>
+        <a href="/" class="w3-bar-item w3-button">Izvještajni obrasci</a>
+
+      </div>
+      </div>
+                <li> <a href="/login">Login </a></li>
+                <li> <a href="/register">Register </a></li>                 
+                </ul>
+            </div>
+            
+        </nav> 
+        <canvas></canvas>
+ 
+         </header>
+        
+ 
+    <!-- Navigation -->
+    <div class = "ara">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+  <img src="/img/bpk.png" alt="Logo" class="logo">
+        <a class="navbar-brand">Zavod  za  Javno  Zdravstvo</a>
+        <p></p>
+        <a class="navbar-brand1">Bosansko-podrinjskog kantona Goražde</a>
+                  <div class="navbar-brand2">
+      <a href="http://www.bpkg.gov.ba/skupstina/3145/zakoni/">|Zakoni |</a>
+    <a class="btn4" href="#">Linkovi | </a>
+    <a class="btn3" href="#">COVID-19 |</a>
+   
+  </div>
+        <div class="search">
+         <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button class="btn btn-secondary" type="button">Go!</button>
+                </span>
+              </div>
+              </div>
+      </div>
+      
+             
+    </nav>
+    </div>
+   
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+
+   <h5><span class='six'>n</span><span class='six'>o</span><span class='six'>v</span><span class='six'>o</span><span class='six'>s</span><span class='one'>t</span><span class='two'>i</span><hr></h5>       
+
+
+  {{#each posts}}
+          <!-- Blog Post -->
+          <div class="card mb-4">
+            <img class="card-img-top" src="/uploads/{{file}}" alt="Card image cap">
+           
+              <h2 class="card-footer text-muted">{{title}}</h2>
+              <p class="card-footer text-muted">{{body}}</p>
+              <div class = "card-body">
+              <a href="/posts/{{slug}}" class="btn btn-primary">Pročitaj više &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on {{generateTime date "MMMM Do YYYY"}} 
+             
+            </div>
+          </div>
+          {{/each}}
+                   <div id="slideshow">
+ 
+
+          <!-- Pagination -->
+          <ul class="pagination justify-content-center mb-4">
+            {{#paginate current=current pages=pages}}{{/paginate}}
+          
+          </ul>
+
+        </div>
+        </div>
+
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+          <!-- Search Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Kategorije</h5>
+            <div class="card-body">
+               <div class="row">
+
+                {{#each categories}}
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">{{name}}</a>
+                    </li>
+                   
+                   
+                  </ul>
+                </div>
+          
+
+              {{/each}}
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">COVID-19</h5>
+            <div class="card-body">
+              <div class="slika">
+                <p></p>
+                <p>Obavještenja sa zvanične stranice ZZJZ FBiH</p>
+                <a href="https://www.zzjzfbih.ba/covid-19/"><img src="/img/22.jpg" style="width: 100%;"></a>
+                <hr>
+                <img src="/img/korona.jpg" style="width: 100%;">
+                <p></p>
+                <p>Informacije sa službene stranice Vlade BPK</p>
+                <hr>
+                  <a href="http://www.bpkg.gov.ba/kategorija/korona-virus/"><img src="/img/56.png" style="width: 100%;"></a>
+                  <hr>
+                  <video width="270" height="290" controls>
+  <source src="/img/122.mp4" type="video/mp4">
+</video>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Korisni linkovi</h5>
+            <div class="card-body">
+               <div class = "Link">
+            <a href="https://www.zzjzfbih.ba/"> >  Zavod za javno zdravstvo FBiH</a>
+            <p></p>      
+            <a href="http://www.kcus.ba/"> >  Univerzitetski klinički centar Sarajevo</a>
+            <p></p>
+            <a href="https://www.obs.ba/"> >  Opća bolnica Abdulah Nakaš</a>
+            <p></p>
+            <a href="https://fsa.gov.ba/bs/"> >  Agencija za sigurnost hrane</a>
+            <p></p>
+            <a href="http://www.fuzip.gov.ba/"> >  Federalna uprava za inspekcijske poslove</a>
+            <p></p>
+            <a href="https://www.fmoh.gov.ba/"> >  Federalno ministarstvo zdravstva</a>
+            <p></p>
+            <a href="http://kucz.ks.gov.ba/"> >  Federalna uprava civilne zaštite</a>
+            <p></p>
+            <a href="https://bosniaherzegovina.un.org/en"> >  Ujedinjene nacije u Bosni i Hercegovini</a>
+            <p></p>
+            <a href="https://www.ba.undp.org/content/bosnia_and_herzegovina/en/home/"> >  UNDP</a>
+            <p></p>
+            <a href="https://www.unicef.org/bih/"> >  UNICEF</a>
+            <p></p>
+            <a href="http://www.mf.unsa.ba/"> >  Medicinski fakultet Sarajevo</a>
+            <p></p>
+            <p></p>
+            <a href="http://www.mef.ues.rs.ba/"> >  Medicinski fakultet Foča</a>
+        
+        </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+   
+    <!-- /.container -->
+ <section class="sekcija3">
+   
+   <h5><span class='six'>z</span><span class='six'>a</span> <span class='six'>v</span><span class='six'>a</span><span class='six'>s</span> <span class='one'>i</span><span class='two'>z</span><span class='three'>d</span><span class='four'>v</span><span class='six'>a</span><span class='six'>j</span><span class='seven'>a</span><span class='eight'>m</span><span class='nine'>o</span><hr></h5>
+
+   <div class="kartice1">
+            <div class="row">
+        <div class="col span-1-of-3">
+            <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+       <h3>Plava knjiga <p></p><i class='fas fa-book' style='font-size:48px'></i></h3>
+    </div>
+    <div class="flip-card-back">
+     <p>Standardi i normativi zdravstvene zaštite i nomenklatura usluga u Federacije BiH<br> <br> <a href="https://www.zzjzfbih.ba/standardi-i-normativi-zdravstvene-zastite-i-nomenklatura-usluga-u-federaciji-bosne-i-hercegovine-plava-knjiga-2014/"><button>Klikni</button></a>
+    </div>
+  </div>
+</div>
+                </div>
+
+<div class="col span-1-of-3">
+            <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      
+        <h3><p></p>Zdravstvena stanja stanovništva <p></p><i class='fas fa-people-carry' style='font-size:48px'></i> </h3>
+    </div>
+    <div class="flip-card-back">
+      <p></p>
+      <p> Zdravstveno stanje stanovništva i zdravstvena zaštita u Federaciji BiH <br> <br> <a href="https://www.zzjzfbih.ba/zdravstvena-stanja-stanovnistva/"><button>Klikni</button></a>
+         </p>
+         
+        
+    </div>
+  </div>
+</div>
+                </div>
+
+
+<div class="col span-1-of-3">
+            <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+     <h3><p></p>Statistički godišnjaci<p></p><i class='fas fa-chart-bar' style='font-size:48px'></i></h3>
+    </div>
+    <div class="flip-card-back">
+      <p> Zdravstveno statistički godišnjaci Federacije BiH <br> <br> <a href="https://www.zzjzfbih.ba/statisticki-godisnjaci/"><button>Klikni</button></a>
+        
+    </div>
+  </div>
+</div>
+                </div>
+
+
+</div>
+                </div>
+    </section>
+
+<section class="karakteristike">
+    <div class = "aktivnosti">
+       <h5><span class='six'>a</span><span class='six'>k</span><span class='six'>t</span><span class='six'>i</span><span class='six'>v</span><span class='one'>n</span><span class='two'>o</span><span class='three'>s</span><span class='four'>t</span><span class='six'>i</span><hr></h5>
+      <p></p>
+      <p></p>
+        <img src="/img/Screen.png" style="width:100%">
+    </div>
+</section>
+
+
+
+
+ <section class="sekcija1">
+   <div class="kartice">
+            <div class="row">
+        <div class="col span-1-of-3">
+            <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+       <h3>Working time <p></p><i class="fa fa-clock-o" style="font-size:48px;"></i></h3>
+    </div>
+    <div class="flip-card-back">
+      <p></p>
+       <p>Daily &#8987;<br> <span>08:00- 16:00</span> <br> <br>
+         Weekend &#8987;<br> <span>08:00- 15:00</span> <br>
+         </p> 
+    </div>
+  </div>
+</div>
+                </div>
+
+<div class="col span-1-of-3">
+            <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      
+        <h3><p></p>Chat-bot <p></p><i class='far fa-comment-dots' style='font-size:48px;'></i> </h3>
+    </div>
+    <div class="flip-card-back">
+      <p></p>
+      <p> You have a question? <br> <br>
+        <span>Talk with our Virtual Assistant Chat-bot <br> &#128172;</span> </p>
+    </div>
+  </div>
+</div>
+                </div>
+
+
+<div class="col span-1-of-3">
+            <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+     <h3><p></p>Contact <p></p><i class="fa fa-phone-square" style="font-size:48px;"></i></h3>
+    </div>
+    <div class="flip-card-back">
+      <p>tel:<span> 038/220 - 060</span> <br>
+          fax: <span>038/220 - 385</span> <br> <br>
+         &#128233;<span>ZZJZBPK@live.com</span>
+         &#128205;<span>Višegradska bb</span>
+        
+    </div>
+  </div>
+</div>
+                </div>
+
+
+</div>
+                </div>
+    </section>
+
+<section class="sekcija-mapa">
+        <div class="row">
+        <div class="karta">
+<div class="container225">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="/img/5.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="/img/6.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="/img/7.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="/img/8.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="/img/9.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="/img/10.jpg" style="width:100%">
+  </div>
+  
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="/img/5.jpg" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/img/6.jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/img/7.jpg" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/img/8.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/img/9.jpg" style="width:100%" onclick="currentSlide(5)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/img/10.jpg" style="width:100%" onclick="currentSlide(6)">
+    </div>
+  </div>
+</div>
+</div>
+
+    
+    <div class="card5">
+  <img src="/img/tom.jpg" alt="John" style="width:100%">
+  <h1>mr.dr Tom Cruise</h1>
+  <p class="title">Direktor ZZJZ BPK</p>
+  <p>Medicinski fakultet</p>
+  <div style="margin: 24px 0;">
+   
+  </div>
+    </div>
+
+      <div class="card6">
+  <img src="/img/vin.jpg" alt="John" style="width:100%">
+  <h1>mr.dr Vin Diesel</h1>
+  <p class="title">ministar Zdravstva BPK</p>
+  <p>Ekonomski fakultet</p>
+  <div style="margin: 24px 0;">
+    
+  </div>
+ 
+            </div>
+    </section>
+
+<section class="sekcija2">
+   <h5><span class='six'>l</span><span class='six'>o</span><span class='six'>k</span><span class='six'>a</span><span class='six'>c</span><span class='one'>i</span><span class='two'>j</span><span class='three'>a</span><hr></h5>
+          <div class="karta">
+           <iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11542.7622456515!2d18.966734!3d43.675405!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xede5a982813eb0b5!2sZavod%20za%20javno%20zdravstvo%20BPK!5e0!3m2!1shr!2sba!4v1584977277292!5m2!1shr!2sba" width="1700" height="380"  frameborder="5" style="border:5;" allowfullscreen="" aria-hidden="false" tabindex="3"></iframe>
+    </div>
+
+</section>
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <div class="podaci">
+          <h4>Zavod za javno zdravstvo</h4>
+          <p></p>
+          <p>Bosansko-podrinjskog kantona Goražde</p>
+          <p>Višegradska bb</p>
+          <p>73000 Goražde</p>
+          <p>Bosna i Hercegovina</p>
+          
+         <ul class="social-nav">
+                    <li><a href="http://www.facebook.com" class="fb"><i class='fab fa-facebook-square'></i></a></li>
+                    <li><a href="#" class="http://www.twiter.com"><i class='fab fa-twitter'></i></a></li>
+                    <li><a href="#" class="http://www.instagram.com"><i class='fab fa-instagram'></i></a></li>
+                    <li><a href="#" class="http://www.linkendlin.com"><i class='fab fa-linkedin'></i></a></li>
+                </ul>
+                <div class="novo1">
+                  <hr>
+                </div>
+               
+               
+               <div class="novo">
+        <p class="m-0 text-center text-white">Copyright &copy; Armin Pezo Website 2020</p>
+        </div>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/script.js"></script>
+  
+
+  </body>
